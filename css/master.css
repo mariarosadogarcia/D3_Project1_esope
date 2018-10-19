@@ -1,0 +1,283 @@
+/* Ceci est un commentaire en CSS - Les navigateurs ignorent les commentaires.
+De cette manière nous pouvons laisser des messages pour d'autres codeurs et des explications de ce que nous avons fait. */
+
+/* Dans les 4 selectors suivants nous allons travailler sur la navigation de notre page.
+
+Nous découvrons ici la possibilité d'utiliser des selectors composés ex : header ul  Ceci permet, par exemple, de cibler les elements de la liste du header sans affecter ceux du footer.
+ */
+ @import url('https://fonts.googleapis.com/css?family=Black+Ops+One|Cabin+Sketch|Pinyon+Script|Viga');
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display|Ubuntu+Condensed');
+
+
+header {
+}
+
+header ul {
+  background-color: rgba(0, 0, 0, 0.3);
+  list-style-type: none;
+  font-family: 'Niramit', sans-serif;
+  font-size: 1em;
+  width:100%;
+  float:left;
+  position: fixed;
+}
+
+header li {
+  display: inline-block;
+}
+
+header a {
+  text-decoration: none;
+  color : #ffffff;
+  padding: 12px;
+  display: block;
+  padding-right:1em;
+}
+
+/* A noter ici :
+1. L'utilisation d'une class sur la div, nous la ciblons ici dans la CSS au moyen d'un point .
+2. l'utilisation de background image et de background size
+3. une hauteur minimal à la div. (pour comprendre ce qu'est une VH : https://css-tricks.com/the-lengths-of-css/)
+*/
+.hero {
+  background: rgb(134, 0, 0) url('images/fables.jpg') top center no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20px;
+
+}
+
+.hero h1 {
+text-align: left;
+font-family: 'Old Standard TT', serif;
+font-size: 60px;
+color:white;
+padding-top: 8em;
+padding-left: 1em;
+}
+
+.hero p{
+  width: 50%;
+  background-color: red;
+}
+
+
+/* Sur les sections :
+1. Nous utilisons encore une hauteur minimale pour faciliter la lecture et le rythme vertical de la page.
+2. Nous utilsons des classes pour permettre d'aleterner visuellement les sections.
+*/
+section {
+  min-height: 90vh;
+  padding: 42px;
+}
+
+.even {
+  background: rgb(229, 141, 237);
+}
+.odd {
+  background: rgb(139, 132, 142);
+}
+
+
+
+#section01 {
+  background: rgb(134, 0, 0) url('images/image01.jpg') top center no-repeat;
+  color: #FFFFFF;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display:flex;
+  align-items: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding-left: 14em;
+
+}
+
+#section01 h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 5em;
+  text-align:left;
+  color:#FFFFFF	);
+  line-height: 1em;
+}
+
+#section01 p {
+  max-width: 600px;
+  line-height:1.3em;
+  font-size: 1.3em;
+}
+
+#section02 h1 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 50px;
+  text-align:left;
+  color:#FFFFFF;
+}
+
+#section02 {
+  background: url('images/image02.jpg') top center no-repeat;
+  color: white;
+  min-height: 100vh;
+  background-size: cover;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#section02 p {
+  background-color: rgba(59, 43, 46, 0.5);
+  padding: 1em;
+  max-width: 600px;
+}
+
+#section03 {
+  background: url('images/image03.jpg') top center no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display:flex;
+}
+
+#section03 h1 {
+  font-family: 'Prata', serif;
+  font-size: 60px;
+  line-height: 1.2;
+  color: rgba(73, 91, 106, 0.9);
+
+}
+
+#section03 p{
+  font-family: 'Playfair Display', serif;
+  color:#FFFFFF;
+  max-width: 500px;
+  align-items: center;
+  line-height: 1.8;
+}
+
+#section04 {
+  background: url('images/image04.jpg') top center no-repeat;
+  color: #FFFFF;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display:flex;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#section04 h1{
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color:white;
+  font-size: 50px;
+}
+
+#section04 p{
+  font-family: 'Homenaje', sans-serif;
+  color:grey;
+  max-width: 500px;
+  align-items: center;
+  line-height: 1.6;
+}
+
+#section05 {
+  background: rgb(134, 0, 0) url('images/image05.jpg') top center no-repeat;
+  color: grey;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding-top: 8em;
+}
+
+#section05 h1{
+  text-align: right;
+  padding-right: 3em;
+}
+
+#section05 p {
+  text-align: right;
+  max-width: 600px;
+  padding-left: 40em;
+}
+
+
+/* Nous souhaitons que les images soient responsives... c'est à dire n'éxcèdent pas une certaine largeur ET se redimensionnent avec leur parent */
+
+.image-block {
+  max-width: 640px;
+  display:block;
+  margin: auto;
+}
+
+.image-block img {
+  width : 100%;
+display:block;
+}
+
+figcaption {
+  font-family: 'Fahkwang', serif;
+  font-style: italic;
+  text-align: center;
+  padding-top: 10px;
+}
+
+footer {
+  min-height: 200px;
+  background: grey;
+  color : #fff;
+  padding: 20px;
+  line-height: 2.2;
+  display:flex;
+  font-family: 'Niramit', sans-serif;
+  display: block;
+  font-size: 1em;
+  padding-left: 3em;
+}
+
+
+/*
+Para crear texto centrado sobre foto de fondo
+
+.hero {
+  background: rgb(134, 0, 0) url('images/fables.jpg') top center no-repeat;
+  color: #fff;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+en typo.css
+
+.hero h1 {
+  color: rgb(0, 0, 0);
+  background: rgba(255, 0, 0, 0.5);
+  padding: 22px;
+}
+
+.hero h1 span {
+  color: rgb(123, 112, 96);
+  font-family: 'Fahkwang', serif;
+  display: block;
+}
+
+*/
+
+
+/*
+
+// Small devices
+
+// Medium devices (landscape phones, 576px and up)
+@media (min-width: 640px) { ... }
+
+// Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// Extra large devices
+
+@media (min-width: 1440px) { ... }
+
+*/

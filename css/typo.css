@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200|Ultra');
+@import url('https://fonts.googleapis.com/css?family=Charmonman|Cabin+Sketch|Lalezar|Fira+Sans|Josefin+Sans|Paytone+One'');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Homenaje|Open+Sans+Condensed:300|Playfair+Display:400i|Ubuntu+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Niramit|Old+Standard+TT|Ubuntu+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Prata|Vidaloka');
+
+
+html {
+  font-size: 1em;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fahkwang', serif;
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+  text-align: center;
+}
+
+h2 {font-size: 2.827em;}
+
+h3 {font-size: 1.999em;}
+
+h4 {font-size: 1.414em;}
+
+small, .font_small {font-size: 0.707em;}
