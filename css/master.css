@@ -17,9 +17,11 @@ header ul {
   list-style-type: none;
   font-family: 'Niramit', sans-serif;
   font-size: 1em;
-  width:100%;
-  float:left;
-  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: fiexed;
+  padding: 1em;
 }
 
 header li {
@@ -31,7 +33,6 @@ header a {
   color : #ffffff;
   padding: 12px;
   display: block;
-  padding-right:1em;
 }
 
 /* A noter ici :
@@ -90,8 +91,6 @@ section {
   display:flex;
   align-items: center;
   font-family: 'Open Sans Condensed', sans-serif;
-  padding-left: 14em;
-
 }
 
 #section01 h1 {
@@ -188,14 +187,13 @@ section {
 }
 
 #section05 h1{
-  text-align: right;
+  text-align: left;
   padding-right: 3em;
 }
 
 #section05 p {
-  text-align: right;
+  text-align: left;
   max-width: 600px;
-  padding-left: 40em;
 }
 
 
